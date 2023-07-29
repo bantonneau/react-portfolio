@@ -1,25 +1,29 @@
-
+import eCommerce from '../assets/eCommerceBackEnd.png'
+import Employee from '../assets/EmployeeTracker.png'
+import JobBoard from '../assets/jobmode.png'
+import Notes from '../assets/NoteTaker.png'
+import SocialMedia from '../assets/SocialMediaApi.png'
 
 
 export const projectList = [
     {
         name: "Job Board",
-        image: ""
+        image: JobBoard
     },
     {
         name: "Social Media Api",
-        image: ""
+        image: SocialMedia
     },
     {
         name: "eCommerce Backend",
-        image: ""
+        image: eCommerce
     },
     {
         name: "Employee Tracker",
-        image: ""
+        image: Employee
     },
     {
         name: "Note Taker",
-        image: ""
+        image: Notes
     }
 ]
