@@ -1,8 +1,17 @@
-import React from 'react'
+import React from "react";
+import ProjectItem from '../components/ProjectItem';
+import { projectList } from "../helpers/ProjectList";
+
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div className="projects">
+        <div className="projectList">
+          {projectList.map((project) => {
+              return <ProjectItem name={project.name} image={project.image}/>
+          })}
+        </div>
+    </div>
   )
 }
 

@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
     height: 100px;
-    background: rgb(176, 149, 250);
+    background: rgb(74, 28, 199);
 }
 
 .links {
@@ -47,7 +47,7 @@
 #open .links {
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 #open a {

@@ -1,13 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import '../styles/navbar.css'
 import ReorderIcon from '@material-ui/icons/Reorder'
 
-function navbar() {
+function Navbar() {
+  const [expandNavbar, setExpandNavbar] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setExpandNavbar(false)
+  }, [location])
+
   return (
-    <div className='navbar'>
+    <div className='navbar' id={expandNavbar ? 'open':'close'}>
         <div className='toggleButton'>
-            <button> <ReorderIcon /> </button>
+            <button onClick={() => {
+              setExpandNavbar((prev) => !prev);
+              }}> 
+              <ReorderIcon /> 
+            </button>
         </div>
         <div className='links'>
             <Link to='/'> Home </Link>
@@ -18,4 +30,4 @@ function navbar() {
   )
 }
 
-export default navbar
+export default Navbar
