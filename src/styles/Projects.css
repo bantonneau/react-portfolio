@@ -14,11 +14,13 @@
   }
   
   .projectList {
-    width: 70vw;
+    width: 80vw;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     place-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
   }
   
   /* MENU ITEM STYLING */
@@ -30,6 +32,7 @@
     margin: 40px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    flex-shrink: 0;
   }
   .projectItem:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
