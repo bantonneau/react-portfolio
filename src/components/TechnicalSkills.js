@@ -4,14 +4,17 @@ import React from 'react'
 export const frontendSkills = [
     "HTML",
     "CSS",
+    "React",
+    "Handlebars",
+    "Tailwind",
+    "Bootstrap",
+    "SASS",
+    // are the entries below really front end? Maybe move some of those to backend and mvc could be front end
+    "JQuery",
     "JavaScript",
     "APIs",
-    "JQuery",
     "JSON",
     "AJAX",
-    "Bootstrap",
-    "Tailwind",
-    "React",
   ];
   
 export const backendSkills = [
