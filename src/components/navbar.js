@@ -13,19 +13,29 @@ function Navbar() {
   }, [location])
 
   return (
-    <div className='navbar' id={expandNavbar ? 'open':'close'}>
-        <div className='toggleButton'>
-            <button onClick={() => {
-              setExpandNavbar((prev) => !prev);
-              }}> 
-              <ReorderIcon /> 
-            </button>
+    <div className='navbar' id={expandNavbar ? 'open' : 'close'}>
+      <div className='toggleButton'>
+        <div class="logoMobile">
+          AntonneauWebDev
+        </div>
+        <button onClick={() => {
+          setExpandNavbar((prev) => !prev);
+        }}>
+          <ReorderIcon />
+        </button>
+      </div>
+      <div className='navbarElements'>
+        <div>
+          <div class="logoDesktop">
+            AntonneauWebDev
+          </div>
         </div>
         <div className='links'>
-            <Link to='/'> Home </Link>
-            <Link to='/projects'> Projects </Link>
-            <Link to='/resume'> Resume </Link>
+          <Link to='/'> Home </Link>
+          <Link to='/projects'> Projects </Link>
+          <Link to='/resume'> Resume </Link>
         </div>
+      </div>
     </div>
   )
 }

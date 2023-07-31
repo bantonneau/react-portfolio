@@ -2,7 +2,7 @@
   --mainColor: #001F3F;
   --accentColor: white;
   --mainText: #0074D9;
-  --accentText: rgb(232, 232, 149);
+  --accentText: rgb(255, 255, 255);
 }
 
 .home {
@@ -11,6 +11,31 @@
   font-family: "Arial", sans-serif;
   color: var(--mainColor);
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.image-cropper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 4vw;
+  flex-shrink: 0;
+}
+
+.hero img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
 
 .about {
   width: 100%;
@@ -25,14 +50,15 @@
 
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 80px;
+  font-size: 50px;
   color: var(--accentText);
-  height: 50px;
 }
 
 .about .prompt {
   width: 40%;
   font-size: 30px;
+  margin-top: 75px;
+  background-color: #243547;
 }
 
 .prompt svg {
@@ -81,14 +107,10 @@
 }
 
 .toggleContainer {
-  /* Using the shorthand property */
 margin: 40px 0 20px 0;
 }
 
 .toggle {
-  /* --width: 80px;
-  --height: calc(var(--width) / 3); */
-
   position: relative;
   display: inline-block;
   width: 300px;
@@ -194,5 +216,15 @@ margin: 40px 0 20px 0;
     margin-top: 10px;
     font-size: 20px;
     width: 80%;
+  }
+
+  .image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 4vw;
+    flex-shrink: 0;
   }
 }

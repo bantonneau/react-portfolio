@@ -3,15 +3,17 @@
   --accentColor: white;
   --mainText: #0074D9;
   --accentText: rgb(232, 232, 149);
+  --backgroundGrey: #f0f0f0;
 }
 
 .project {
-    width: 100%;
-    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 10vw 0 10vw;
+    font-family: "Arial", sans-serif;
+    text-align: center;
   }
   
   .project h1 {
@@ -25,11 +27,46 @@
   }
   
   .project p {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--mainColor);
+  }
+
+  .project li {
+    color: var(--mainColor);
+    text-align: start;
+    font-size: 25px;
   }
   
   .project svg {
     font-size: 60px;
     color: var(--mainColor);
   }
+
+  .button {
+    background-color: var(--mainColor); /* Green */
+    border: none;
+    color: var(--backgroundGrey);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px 0 20px;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+    border: 2px solid var(--mainColor);
+  }
+
+  .button:hover {
+    background-color: var(--backgroundGrey);
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+  }
+
+  @media only screen and (max-width: 700px) {
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  

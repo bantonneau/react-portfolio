@@ -3,6 +3,7 @@ import { LinkedIn, Email, GitHub } from '@material-ui/icons'
 import '../styles/Home.css'
 import TechnicalSkills from '../components/TechnicalSkills.js'
 import SoftSkills from '../components/SoftSkills.js'
+import benos from '../assets/laptop.jpg'
 
 function Home() {
 
@@ -11,7 +12,12 @@ function Home() {
   return (
     <div className='home'>
       <div className='about'>
-        <h2>Hi, My Name is Ben</h2>
+        <div className='hero'>
+          <div class='image-cropper'>
+            <img src={benos} class="rounded" />
+          </div>
+          <h2>Hi, My Name is Ben</h2>
+        </div>
         <div className='prompt'>
           <p>
             I like to code xd xd
@@ -25,7 +31,7 @@ function Home() {
       {/*Make an array of technical skills and soft skills and map them to tile components */}
       {/*Add toggle to switch between technical and soft skills, with nice tile fade in animation when switching? */}
       <div className='skills'>
-        
+
         <div className="toggleContainer">
           <label className="toggle">
             <input type="checkbox" onChange={() => setShowTechnical(!showTechnical)} />
