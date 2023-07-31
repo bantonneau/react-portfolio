@@ -1,7 +1,14 @@
+:root {
+    --mainColor: #001F3F;
+    --accentColor: white;
+    --mainText: #0074D9;
+    --accentText: rgb(232, 232, 149);
+}
+
 .navbar {
     width: 100%;
     height: 100px;
-    background: rgb(74, 28, 199);
+    background: var(--mainColor);
 }
 
 .links {
@@ -10,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--accentColor);
 }
 
 .navbar a {
@@ -36,7 +43,7 @@
     margin-right: 20px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--accentColor);
     cursor: pointer;
 }
 

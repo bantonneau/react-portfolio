@@ -1,3 +1,10 @@
+:root {
+  --mainColor: #001F3F;
+  --accentColor: white;
+  --mainText: #0074D9;
+  --accentText: rgb(232, 232, 149);
+}
+
 .projects {
     width: 100%;
     height: auto;
@@ -8,7 +15,7 @@
   }
   .projects .projectTitle {
     text-align: center;
-    color: #3e497a;
+    color: var(--mainColor);
     font-size: 60px;
     font-weight: bolder;
   }

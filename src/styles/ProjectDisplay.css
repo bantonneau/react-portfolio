@@ -1,3 +1,10 @@
+:root {
+  --mainColor: #001F3F;
+  --accentColor: white;
+  --mainText: #0074D9;
+  --accentText: rgb(232, 232, 149);
+}
+
 .project {
     width: 100%;
     height: calc(100vh - 100px);
@@ -9,7 +16,7 @@
   
   .project h1 {
     margin-top: 50px;
-    color: #3e497a;
+    color: var(--mainColor);
     font-size: 35px;
   }
   .project img {
@@ -19,10 +26,10 @@
   
   .project p {
     font-size: 40px;
-    color: #3e497a;
+    color: var(--mainColor);
   }
   
   .project svg {
     font-size: 60px;
-    color: #3e497a;
+    color: var(--mainColor);
   }
