@@ -8,7 +8,7 @@
 .home {
   width: 100%;
   align-items: center;
-  font-family: "Arial", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--mainColor);
 }
 
@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
+  margin: 50px 0 50px 0;
 }
 
 .image-cropper {
@@ -27,6 +27,7 @@
   border-radius: 50%;
   margin-right: 4vw;
   flex-shrink: 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 .hero img {
@@ -44,27 +45,48 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--mainColor);
   color: var(--accentColor);
+  margin: 150px 0 150px 0;
 }
 
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 50px;
-  color: var(--accentText);
+  color: var(--mainText);margin-bottom: 20px;
 }
 
-.about .prompt {
-  width: 40%;
+.about p {
+  font-size: 20px;
+  color: #001F3F;
+}
+
+.aboutme {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--mainColor);
+  color: var(--accentColor);
+}
+
+.aboutme .prompt {
+  width: 65%;
   font-size: 30px;
-  margin-top: 75px;
-  background-color: #243547;
+  margin-top: 50px;
+  background-color: #f0f0f0;
+  color: black;
+  border: black;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
 }
 
-.prompt svg {
+.socialLinks svg {
   font-size: 60px;
   margin: 5px;
   color: var(--accentColor);
+  margin: 50px 15px 50px 15px;
 }
 
 .githubIcon {
@@ -160,7 +182,7 @@ margin: 40px 0 20px 0;
   height: 100%;
   color: #4d4d4d;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: all 0.4s ease-in-out;
 }
 
