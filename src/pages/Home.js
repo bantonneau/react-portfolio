@@ -4,6 +4,7 @@ import '../styles/Home.css'
 import TechnicalSkills from '../components/TechnicalSkills.js'
 import SoftSkills from '../components/SoftSkills.js'
 import benos from '../assets/laptop.jpg'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -14,7 +15,7 @@ function Home() {
       <div className='about'>
         <div className='hero'>
           <div className='image-cropper'>
-            <img src={benos} className="rounded" />
+            <img src={benos} alt='benos avatar' className="rounded" />
           </div>
           <div className='herotext'>
             <h2>Hi there! I'm Ben</h2>
@@ -29,9 +30,15 @@ function Home() {
           </p>
         </div>
         <div className='socialLinks'>
-          <LinkedIn />
-          <Email />
-          <GitHub className='githubIcon' />
+          <Link to="https://www.linkedin.com/in/benantonn/" target='_blank'>
+            <LinkedIn />
+          </Link>
+          <Link to='mailto:benantonn@gmail.com' target='_blank'>
+            <Email />
+          </Link>
+          <Link to='https://github.com/bantonneau' target='_blank'>
+            <GitHub className='githubIcon' />
+          </Link>
         </div>
       </div>
       <div className='skills'>

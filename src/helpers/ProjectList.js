@@ -1,3 +1,4 @@
+import portfolio from '../assets/Portfolio.png'
 import eCommerce from '../assets/eCommerceBackEnd.png'
 import Employee from '../assets/EmployeeTracker.png'
 import JobBoard from '../assets/jobmode.png'
@@ -22,6 +23,10 @@ export const projectList = [
         technologies: "JavaScript, Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, Express-Session, Heroku, JawsDB, Agile Development",
         github: "https://github.com/bantonneau/jobBoard",
         live: "https://ancient-dusk-05754-ae43192e47d1.herokuapp.com/",
+    },
+    {
+        name: "React Portfolio",
+        image: portfolio,
     },
     {
         name: "Social Media Api",

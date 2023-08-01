@@ -23,9 +23,14 @@
     font-size: 70px;
     cursor: pointer;
   }
+
+  .githubIcon {
+    transform: scale(0.8);
+  }
   
   .footer p {
     color: var(--accentColor);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   
   @media only screen and (max-width: 600px) {

@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+Great, thanks for providing those files. They give a deeper understanding of your project. Here's an enhanced version of your README, including explanations of these key parts of the project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Portfolio
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project showcases an individual portfolio website developed using React, `react-router-dom`, and Material UI. The portfolio is deployed and can be accessed at [www.AntonneauWebDev.com](http://www.AntonneauWebDev.com).
 
-### `npm start`
+## Key Features & Code Explanation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Projects.js`
+This file is a React component that maps over the `projectList` array imported from `ProjectList.js` helper file and creates a `ProjectItem` component for each project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```jsx
+{projectList.map((project, index) => {
+  return <ProjectItem id={index} name={project.name} image={project.image} />
+})}
+```
 
-### `npm test`
+### `Navbar.js`
+This component handles the navigation throughout the website. It uses the `useState` and `useEffect` hooks from React to toggle the display of the navigation menu.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```jsx
+const [expandNavbar, setExpandNavbar] = useState(false);
+...
+<button onClick={() => {
+  setExpandNavbar((prev) => !prev);
+}}>
+```
 
-### `npm run build`
+The useEffect hook is used to close the expanded navigation menu when a new page is navigated to.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```jsx
+useEffect(() => {
+  setExpandNavbar(false)
+}, [location])
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Footer.js`
+This component displays the footer of the portfolio website. It includes links to the LinkedIn profile, email, and GitHub repository of the portfolio owner.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```jsx
+<div className='socialMedia'>
+  <Link to="https://www.linkedin.com/in/benantonn/" target='_blank'>
+    <LinkedIn />
+  </Link>
+  ...
+</div>
+```
 
-### `npm run eject`
+### `ProjectItem.js`
+This component displays individual project items on the Projects page. It uses the `useNavigate` hook from `react-router-dom` to navigate to the details page for each project. A `scrollToTop` function is defined and used to ensure that the page view starts at the top when navigating to a new page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```jsx
+const handleClick = () => {
+  navigate("/project/" + id);
+  scrollToTop();
+};
+...
+<div className='projectItem' onClick={handleClick}>
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `SoftSkills.js`
+This component maps over an array of soft skills and displays each skill.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```jsx
+{softSkills.map((skill, index) => (
+  <div className="skillTile" key={index}>
+    {skill}
+  </div>
+))}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `App.js`
+This is the main React component. It uses React Router (`react-router-dom`) to switch between different pages/components of the website. The `Navbar` and `Footer` components are rendered outside of the `Routes` component so they are displayed on every page.
 
-## Learn More
+```jsx
+<Router>
+  <Navbar />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/project/:id' element={<ProjectDisplay />} />
+      <Route path='/resume' element={<Resume />} />
+    </Routes>
+  <Footer />
+</Router>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
+```
+REACT-PORTFOLIO
+|
++--- assets
+|    +-- ecommercebackend.png
+|    +-- employeetracker.png
+|    +-- jobboard.png
+|    +-- laptop.jpg
+|    +-- notetaker.png
+|    +-- portfolio.ong
+|    +-- socialmediaapi.png
++--- components
+|    +-- Footer.js
+|    +-- NavBar.js
+|    +-- ProjectItem.js
+|    +-- SoftSkills.js
+|    +-- TechnicalSkills.js
++--- helpers
+|    +-- projectList.js
++--- pages
+|    +-- Home.js
+|    +-- ProjectDisplay.js
+|    +-- Projects.js
+|    +-- Resume.js
++--- styles
+|    +-- Footer.css
+|    +-- Home.css
+|    +-- NavBar.css
+|    +-- ProjectDisplay.css
+|    +-- Projects.css
++--- App.js
++--- index.js
++--- App.css
++--- reportWebVitals.js
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is licensed under the MIT License.
 
-### Code Splitting
+## Contact
+[Bennett Antonneau](mailto:benantonn@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+- [React](https://reactjs.org/)
+- [Material-UI](https://material-ui.com/)
