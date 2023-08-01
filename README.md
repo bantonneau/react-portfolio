@@ -2,21 +2,18 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Key Features & Code Explanation](#key-features-&-code-explanation)
-5. [Project Structure](#project-structure)
-6. [License](#license)
-7. [Contact](#contact)
-8. [Acknowledgments](#Acknowledgments)
-
-
 ## Overview
 
 This project showcases an individual portfolio website developed using React, `react-router-dom`, and Material UI. The portfolio is deployed and can be accessed at [www.AntonneauWebDev.com](http://www.AntonneauWebDev.com).
 
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Key Features & Code Explanation](#key-features-&-code-explanation)
+4. [Project Structure](#project-structure)
+5. [License](#license)
+6. [Contact](#contact)
+7. [Acknowledgments](#Acknowledgments)
 
 ## Installation
 
