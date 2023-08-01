@@ -37,7 +37,7 @@ export const projectList = [
         ],
         technologies: "JavaScript, Node.js, Express.js, MongoDB, Mongoose, Moment.js",
         github: "https://github.com/bantonneau/social_media_api",
-        demo: ""
+        demo: "https://drive.google.com/file/d/1pOJ8mVfuiFHi4Fim06i2g3Y4osy4F5a5/view"
     },
     {
         name: "eCommerce Backend",
@@ -52,15 +52,39 @@ export const projectList = [
         "Enabled smooth setup and usage through clear installation instructions, database seeding, and the usage of npm scripts, demonstrating attention to user experience even at the development stage.",
         ],
         technologies: "JavaScript, Node.js, Express.js, MySQL, Sequelize, MySQL2",
-        github: "",
-        demo: ""
+        github: "https://github.com/bantonneau/eCommerceBackEnd",
+        demo: "https://drive.google.com/file/d/1ENwC57uN6ZnqxB2cRNklyxZSXICojuIV/view"
     },
     {
         name: "Employee Tracker",
-        image: Employee
+        image: Employee,
+        description: "A command-line application interacting with user input to manage an employee database, providing various functionalities like viewing departments, roles, and employees, as well as adding new entities or updating existing records.",
+        features: [
+            "Developed a command-line application for employee management, showcasing my skills in Node.js, MySQL, and command-line interfaces.",
+            "Designed an application capable of interacting with user input to manage a MySQL database consisting of departments, roles, and employees in a company.",
+            "Created a comprehensive suite of functionalities including viewing all departments, roles, and employees, adding new departments, roles, or employees, and updating an employee's role.",
+            "Implemented a robust and interactive command-line interface with prompts for different operations, improving user experience and ease of use.",
+            "Established a MySQL database schema to structure and organize data effectively, demonstrating my understanding of relational databases.",
+            "Produced clear installation and usage instructions, along with a video tutorial to guide users through the setup and usage of the application, demonstrating good documentation practices.",
+        ],
+        technologies: "JavaScript, Node.js, MySQL",
+        github: "https://github.com/bantonneau/Employee_Tracker",
+        demo: "https://drive.google.com/file/d/12tYyxaFsXtM8KS8Pe8GqHA7Gj5-muEy3/view"
     },
     {
         name: "Note Taker",
-        image: Notes
+        image: Notes,
+        description: "A web-based application that allows users to create, manage, save, view, and delete notes. The app provides an intuitive user interface and leverages a server-side API for handling note data, enabling access from any device with internet connectivity.",
+        features: [
+            "Developed a web-based NoteTaker application, showcasing my skills in JavaScript, Node.js, and Express.js.",
+            "Implemented an application that provides a user-friendly interface for writing, saving, viewing, and deleting notes, improving user experience and productivity.",
+            "Built a server-side API to handle note data, facilitating access from any device with internet connectivity and ensuring a consistent user experience.",
+            "Employed Heroku for application deployment, enabling users to access the app from a web browser without any local setup.",
+            "Managed note data in a JSON file, demonstrating an understanding of JSON data format and file-based data management.",
+            "Provided clear and concise installation and usage instructions, ensuring users can easily setup and use the application."
+        ],
+        technologies: "JavaScript, Node.js, Express.js, Heroku",
+        github: "https://github.com/bantonneau/Note-Taker",
+        live: "https://note-taker-by-ben-antonneau.herokuapp.com/"
     }
 ]
