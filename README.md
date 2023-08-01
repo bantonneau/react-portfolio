@@ -33,8 +33,8 @@ Visit the deployed application at [www.AntonneauWebDev.com](http://www.Antonneau
 This file is a React component that maps over the `projectList` array imported from `ProjectList.js` helper file and creates a `ProjectItem` component for each project.
 
 ```jsx
-{projectList.map((project, index) => {
-  return <ProjectItem id={index} name={project.name} image={project.image} />
+{projectList.map((project) => {
+  return <ProjectItem key={project.id} id={project.id} name={project.name} image={project.image} />
 })}
 ```
 
