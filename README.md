@@ -1,5 +1,3 @@
-Great, thanks for providing those files. They give a deeper understanding of your project. Here's an enhanced version of your README, including explanations of these key parts of the project:
-
 # React Portfolio
 
 ## Overview
