@@ -15,9 +15,6 @@ function Navbar() {
   return (
     <div className='navbar' id={expandNavbar ? 'open' : 'close'}>
       <div className='toggleButton'>
-        <div class="logoMobile">
-          AntonneauWebDev
-        </div>
         <button onClick={() => {
           setExpandNavbar((prev) => !prev);
         }}>
@@ -26,9 +23,11 @@ function Navbar() {
       </div>
       <div className='navbarElements'>
         <div>
-          <div class="logoDesktop">
-            AntonneauWebDev
-          </div>
+          <Link to="/" >
+            <div className="logoDesktop">
+              AntonneauWebDev
+            </div>
+          </Link>
         </div>
         <div className='links'>
           <Link to='/'> Home </Link>

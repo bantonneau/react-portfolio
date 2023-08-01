@@ -13,8 +13,8 @@ function Home() {
     <div className='home'>
       <div className='about'>
         <div className='hero'>
-          <div class='image-cropper'>
-            <img src={benos} class="rounded" />
+          <div className='image-cropper'>
+            <img src={benos} className="rounded" />
           </div>
           <div className='herotext'>
             <h2>Hi there! I'm Ben</h2>
