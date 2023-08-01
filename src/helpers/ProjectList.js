@@ -38,7 +38,6 @@ export const projectList = [
             "Deployed the website for public access, demonstrating experience in website deployment and management."
         ],
         technologies: "React, react-router-dom, Material UI, Responsive Design",
-        live: 'www.antonneauwebdev.com',
         github: 'https://github.com/bantonneau/react-portfolio'
     },    
     {
