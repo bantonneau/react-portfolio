@@ -34,18 +34,6 @@ useEffect(() => {
 }, [location])
 ```
 
-### `Footer.js`
-This component displays the footer of the portfolio website. It includes links to the LinkedIn profile, email, and GitHub repository of the portfolio owner.
-
-```jsx
-<div className='socialMedia'>
-  <Link to="https://www.linkedin.com/in/benantonn/" target='_blank'>
-    <LinkedIn />
-  </Link>
-  ...
-</div>
-```
-
 ### `ProjectItem.js`
 This component displays individual project items on the Projects page. It uses the `useNavigate` hook from `react-router-dom` to navigate to the details page for each project. A `scrollToTop` function is defined and used to ensure that the page view starts at the top when navigating to a new page.
 
