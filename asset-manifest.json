@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.edd085f8.css",
+    "main.js": "/react-portfolio/static/js/main.c5e12fa1.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/laptop.jpg": "/react-portfolio/static/media/laptop.24941e674227ee6b2420.jpg",
+    "static/media/eCommerceBackEnd.png": "/react-portfolio/static/media/eCommerceBackEnd.8c65dd9b30d853cfe905.png",
+    "static/media/SocialMediaApi.png": "/react-portfolio/static/media/SocialMediaApi.91cb82cb6a4f11bd38ce.png",
+    "static/media/Portfolio.png": "/react-portfolio/static/media/Portfolio.b7e41569b25c10680b7a.png",
+    "static/media/jobmode.png": "/react-portfolio/static/media/jobmode.e4612f3550eb83c4f871.png",
+    "static/media/EmployeeTracker.png": "/react-portfolio/static/media/EmployeeTracker.279f716aae15f4a59957.png",
+    "static/media/NoteTaker.png": "/react-portfolio/static/media/NoteTaker.0ca6a8d9de3ccc9733d9.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.edd085f8.css.map": "/react-portfolio/static/css/main.edd085f8.css.map",
+    "main.c5e12fa1.js.map": "/react-portfolio/static/js/main.c5e12fa1.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edd085f8.css",
+    "static/js/main.c5e12fa1.js"
+  ]
+}
