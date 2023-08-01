@@ -1,8 +1,34 @@
 # React Portfolio
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Key Features & Code Explanation](#key-features-&-code-explanation)
+5. [Project Structure](#project-structure)
+6. [License](#license)
+7. [Contact](#contact)
+8. [Acknowledgments](#Acknowledgments)
+
+
 ## Overview
 
 This project showcases an individual portfolio website developed using React, `react-router-dom`, and Material UI. The portfolio is deployed and can be accessed at [www.AntonneauWebDev.com](http://www.AntonneauWebDev.com).
+
+
+## Installation
+
+To install and run this application locally, follow these steps:
+
+1. Clone the repository to your local machine using `git clone https://github.com/your-username/your-repository.git`.
+2. Navigate to the root directory of the cloned repository in your terminal and run `npm install` to install the necessary dependencies.
+3. Once the installations are completed, run `npm start` to start the application on your local server.
+
+## Usage
+
+Visit the deployed application at [www.AntonneauWebDev.com](http://www.AntonneauWebDev.com) to view the portfolio. If running locally, the application will be accessible at `http://localhost:3000` after running the `npm start` command.
 
 ## Key Features & Code Explanation
 
@@ -74,41 +100,14 @@ This is the main React component. It uses React Router (`react-router-dom`) to s
 ```
 
 ## Project Structure
-```
-REACT-PORTFOLIO
-|
-+--- assets
-|    +-- ecommercebackend.png
-|    +-- employeetracker.png
-|    +-- jobboard.png
-|    +-- laptop.jpg
-|    +-- notetaker.png
-|    +-- portfolio.ong
-|    +-- socialmediaapi.png
-+--- components
-|    +-- Footer.js
-|    +-- NavBar.js
-|    +-- ProjectItem.js
-|    +-- SoftSkills.js
-|    +-- TechnicalSkills.js
-+--- helpers
-|    +-- projectList.js
-+--- pages
-|    +-- Home.js
-|    +-- ProjectDisplay.js
-|    +-- Projects.js
-|    +-- Resume.js
-+--- styles
-|    +-- Footer.css
-|    +-- Home.css
-|    +-- NavBar.css
-|    +-- ProjectDisplay.css
-|    +-- Projects.css
-+--- App.js
-+--- index.js
-+--- App.css
-+--- reportWebVitals.js
-```
+
+- `assets/` - Contains various images used in the project.
+- `components/` - Houses all the React components used in the project such as `Footer.js`, `NavBar.js`, `ProjectItem.js`, `SoftSkills.js`, and `TechnicalSkills.js`.
+- `helpers/` - Contains `ProjectList.js` which includes the list of projects to be displayed.
+- `pages/` - Includes all the main pages of the website: `Home.js`, `ProjectDisplay.js`, `Projects.js`, and `Resume.js`.
+- `styles/` - Houses all the CSS stylesheets for the various components.
+- `App.js` - The main entry point of the React application.
+- `index.js` - The main entry point of the project, renders the `App.js` component.
 
 ## License
 This project is licensed under the MIT License.
@@ -119,3 +118,6 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 - [React](https://reactjs.org/)
 - [Material-UI](https://material-ui.com/)
+
+
+
