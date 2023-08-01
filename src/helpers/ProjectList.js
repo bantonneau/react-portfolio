@@ -27,7 +27,20 @@ export const projectList = [
     {
         name: "React Portfolio",
         image: portfolio,
-    },
+        description: "A portfolio website showcasing my projects and skills, developed using React and Material UI. The portfolio is interactive, responsive, and has a clean, intuitive interface.",
+        features: [
+            "Developed a personal portfolio website using React, demonstrating proficiency in modern web development practices and component-based architecture.",
+            "Incorporated react-router-dom for seamless navigation between different components without a page reload, enhancing user experience.",
+            "Employed Material UI for designing the user interface, demonstrating an ability to work with modern UI libraries.",
+            "Created a dynamic projects section where each project is represented by a ProjectItem component, showcasing the ability to work with dynamic data and rendering components based on that data.",
+            "Used hooks such as useState and useEffect in components like Navbar.js to control component states and lifecycle events, showcasing a deep understanding of the React Hooks system.",
+            "Ensured that the website is responsive and looks consistent across different devices and screen sizes.",
+            "Deployed the website for public access, demonstrating experience in website deployment and management."
+        ],
+        technologies: "React, react-router-dom, Material UI, Responsive Design",
+        live: 'www.antonneauwebdev.com',
+        github: 'https://github.com/bantonneau/react-portfolio'
+    },    
     {
         name: "Social Media Api",
         image: SocialMedia,
