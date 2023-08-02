@@ -23,7 +23,7 @@ export const backendSkills = [
     "MySQL",
     "Sequelize",
     "Restful APIs",
-    "MVC Paradigm",
+    "MVC Framework",
     "MongoDB",
     "NoSQL",
     "GraphQL",
