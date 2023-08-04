@@ -18,7 +18,6 @@ const softSkills = [
 const SoftSkills = () => {
     return (
         <div>
-            <h2>Professional Skills</h2>
             <div className='skillsContainer'>
                 {softSkills.map((skill, index) => (
                     <div className="skillTile" key={index}>

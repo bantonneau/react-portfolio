@@ -46,7 +46,7 @@ const otherSkills = [
 const TechnicalSkills = () => {
     return (
         <div>
-            <h2>Front End</h2>
+            <h3>Front End</h3>
             <div className='skillsContainer'>
             {frontendSkills.map((skill, index) => (
                 <div className="skillTile" key={index}>
@@ -55,7 +55,7 @@ const TechnicalSkills = () => {
             ))}
             </div>
 
-            <h2>Back End</h2>
+            <h3>Back End</h3>
             <div className='skillsContainer'>
             {backendSkills.map((skill, index) => (
                 <div className="skillTile" key={index}>
@@ -64,7 +64,7 @@ const TechnicalSkills = () => {
             ))}
              </div>
 
-            <h2>Other</h2>
+            <h3>Other</h3>
             <div className='skillsContainer'>
             {otherSkills.map((skill, index) => (
                 <div className="skillTile" key={index}>
