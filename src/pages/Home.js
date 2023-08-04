@@ -7,29 +7,28 @@ import benos from '../assets/laptop.jpg'
 import { Link } from 'react-router-dom'
 
 function Home() {
-
   const [showTechnical, setShowTechnical] = useState(true);
 
   return (
-    <div className='home'>
-      <div className='about'>
-        <div className='hero'>
+    <main className='home'>
+      <header className='about'>
+        <section className='hero'>
           <div className='image-cropper'>
             <img src={benos} alt='benos avatar' className="rounded" />
           </div>
           <div className='herotext'>
-            <h2>Hi there! I'm Ben</h2>
-            <p>Full Stack Web Developer</p>
+            <h1>Hi there! I'm Ben</h1>
+            <h2>Full Stack Web Developer</h2>
           </div>
-        </div>
-      </div>
-      <div className='aboutme'>
-        <div className='prompt'>
+        </section>
+      </header>
+      <section className='aboutme'>
+        <article className='prompt'>
           <p>
-            I'm a Full Stack Developer with a strong understanding of both front-end and back-end technologies. My previous experience in graphic and apparel design gives me a unique set of skills and an eye for beauty and good design. When I'm not building websites you will find me lifting weights, designing clothes, or working on unity games with my friends.
+            I'm a Full Stack Developer with a strong understanding of both front-end and back-end technologies. My previous experience in graphic and apparel design gives me a unique set of skills with the Adobe Creative Suite. When I'm not building websites you will find me lifting weights, designing clothes, or working on unity games with my friends.
           </p>
-        </div>
-        <div className='socialLinks'>
+        </article>
+        <nav className='socialLinks'>
           <Link to="https://www.linkedin.com/in/benantonn/" target='_blank'>
             <LinkedIn />
           </Link>
@@ -39,10 +38,9 @@ function Home() {
           <Link to='https://github.com/bantonneau' target='_blank'>
             <GitHub className='githubIcon' />
           </Link>
-        </div>
-      </div>
-      <div className='skills'>
-
+        </nav>
+      </section>
+      <section className='skills'>
         <div className="toggleContainer">
           <label className="toggle">
             <input type="checkbox" onChange={() => setShowTechnical(!showTechnical)} />
@@ -50,12 +48,11 @@ function Home() {
             <span className="labels" data-on="Soft Skills" data-off="Technical Skills"></span>
           </label>
         </div>
-
         <div className="skillsContainer">
           {showTechnical ? <TechnicalSkills /> : <SoftSkills />}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
