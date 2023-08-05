@@ -45,7 +45,7 @@ const otherSkills = [
 
 const TechnicalSkills = () => {
     return (
-        <div>
+        <div className='rowContent'>
             <h3>Front End</h3>
             <div className='skillsContainer'>
             {frontendSkills.map((skill, index) => (

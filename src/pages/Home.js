@@ -14,25 +14,37 @@ function Home() {
         <ResponsiveHero />
       </header>
       <section className='wrapper'>
-        <div className='row'>
-          <h2 className='title'>My Projects</h2>
-          <div className="projects">
-            <div className="projectList">
-              {projectList.map((project, index) => {
-                return <ProjectItem key={index} id={index} name={project.name} image={project.image} />
-              })}
+        <section className='row2'>
+          <div className='spacer'></div>
+          <div className='row'>
+            <h2 className='title'>My Projects</h2>
+            <hr className='projectBar'></hr>
+            <div className="projects rowContent">
+              <div className="projectList">
+                {projectList.map((project, index) => {
+                  return <ProjectItem key={index} id={index} name={project.name} image={project.image} />
+                })}
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
       <section className='wrapper'>
-        <section className='row'>
-          <h2 className='title'>Technical Skills</h2>
-          <TechnicalSkills />
+        <section className='row2'>
+          <div className='spacer'></div>
+          <section className='row'>
+            <h2 className='title'>Technical Skills</h2>
+            <hr></hr>
+            <TechnicalSkills />
+          </section>
         </section>
-        <section className='row'>
-          <h2 className='title'>Professional Skills</h2>
-          <SoftSkills />
+        <section className='row2'>
+          <div className='spacer'></div>
+          <section className='row'>
+            <h2 className='title'>Professional Skills</h2>
+            <hr></hr>
+            <SoftSkills />
+          </section>
         </section>
       </section>
     </main>

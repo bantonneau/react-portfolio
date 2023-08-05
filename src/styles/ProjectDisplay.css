@@ -43,7 +43,7 @@
   }
 
   .button {
-    background-color: var(--mainColor); /* Green */
+    background-color: var(--mainColor); 
     border: none;
     color: var(--backgroundGrey);
     padding: 15px 32px;
