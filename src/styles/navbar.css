@@ -37,6 +37,14 @@
     border-radius: 15px;
 }
 
+.socialMedia svg {
+    color: white;
+    margin: 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+
 .navbar a {
     color: white;
     text-decoration: none;

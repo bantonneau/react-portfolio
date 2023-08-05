@@ -88,10 +88,10 @@ h3 {
   padding-left: 2vw;
 }
 
-.socialMedia {
-  color: var(--mainColor);
-  margin: 20px;
-  font-size: 70px;
+.navbar .socialMedia {
+  color: white;
+  margin: 0px 20px 0px 20px;  
+  font-size: 20px;
   cursor: pointer;
 }
 

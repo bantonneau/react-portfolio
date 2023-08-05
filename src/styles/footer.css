@@ -18,14 +18,12 @@
   }
   
   .socialMedia svg {
+    color: white;
     margin: 20px;
     font-size: 70px;
     cursor: pointer;
   }
 
-  .githubIcon {
-    transform: scale(0.8);
-  }
   
   .footer p {
     color: var(--accentColor);
