@@ -6,14 +6,14 @@
 }
 
 h1 {
-  font-size: 40px;
-  color: var(--mainText);
+  font-size: 30px;
+  color: var(--mainColor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--mainColor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 0;
@@ -21,6 +21,7 @@ h2 {
 
 h3 {
   margin-top: 0;
+  font-size: 15px;
 }
 
 
@@ -34,17 +35,22 @@ h3 {
 .hero {
   display: flex;
   justify-content: space-between;
-  margin: 50px 6vw 50px 6vw;
+  margin: 0px 6vw 50px 6vw;
+  width: 100%;
+}
+
+.heroContent {
+  display: flex;
 }
 
 .image-cropper {
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
   position: relative;
+  margin-top: -50px;
   overflow: hidden;
   border-radius: 50%;
   flex-shrink: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .hero img {
@@ -58,11 +64,9 @@ h3 {
 .about {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: var(--accentColor);
-  padding: 100px 0 100px 0;
+  padding: 20px 0 20px 0;
 }
 
 .about h1 {
@@ -76,25 +80,38 @@ h3 {
 .about p {
   font-size: 20px;
   color: #001F3F;
+  max-width: 600px;
+  width: 100%;
 }
 
 .herotext {
-  padding: 0 6vw 0 6vw;
+  padding-left: 2vw;
 }
 
-.skillsWrapper {
+.socialMedia {
+  color: var(--mainColor);
+  margin: 20px;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.githubIcon {
+  transform: scale(0.8);
+}
+
+.wrapper {
   padding: 0 6vw 0 6vw;
   display: flex;
   flex-wrap: wrap;
 }
 
-.skillTitle {
+.title {
   width: 190px;
   margin-right: 20px;
   flex-shrink: 0;
 }
 
-.skillsRow {
+.row {
   display: flex;
   justify-content: center;
 }
@@ -159,26 +176,9 @@ h3 {
   }
 
 
-  .toggle .labels {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #4d4d4d;
-    font-size: 15px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 0.4s ease-in-out;
-  }
-
-  .toggle .labels::after {
-    content: attr(data-off);
-    position: absolute;
-    top: 40px;
-    right: 15px;
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-  }
+ .row {
+  flex-direction: column;
+ }
 
 
   .skills {
