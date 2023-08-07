@@ -91,7 +91,7 @@ h3 {
   align-items: center;
 }
 
-button {
+.buttons a {
   background-color: var(--mainColor); 
   border: none;
   color: var(--backgroundGrey);
@@ -106,7 +106,7 @@ button {
   border: 2px solid var(--mainColor);
 }
 
-button:hover {
+.buttons a:hover {
   background-color: var(--backgroundGrey);
   color: var(--mainColor);
   border: 2px solid var(--mainColor);
@@ -119,8 +119,16 @@ button:hover {
   cursor: pointer;
 }
 
+.socialMedia svg {
+  font-size: 20px;
+}
+
 .githubIcon {
   transform: scale(0.8);
+}
+
+.modal {
+  color: black;
 }
 
 .wrapper {

@@ -1,9 +1,14 @@
 import React from 'react'
 import '../styles/resume.css'
+import { ArrowBack } from '@material-ui/icons'
+import { Link } from 'react-router-dom'
 
 function Resume() {
   return (
     <div className='resumeContainer'>
+      <Link to="/" className='backArrow'>
+        <ArrowBack /> <h2>Back</h2>
+      </Link>
       <section className='resumeHeader'>
         <h1>Bennett Antonneau</h1>
         <p>AntonneauWebDev.com - 414-731-5209 - benantonn@gmail.com - www.linkedin.com/in/benantonn/</p>

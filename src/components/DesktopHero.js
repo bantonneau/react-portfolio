@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import benos from '../assets/laptop.jpg'
+import ContactMe from './ContactMe'
 
 
 function DesktopHero() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <section className='wrapper heroWrapper'>
             <section className='heroContent'>
@@ -15,8 +18,11 @@ function DesktopHero() {
                 </div>
             </section>
             <section className='buttons'>
-                <button>Contact Me</button>
-                <button>Resume</button>
+                <button onClick={() => setIsOpen(true)}>Contact Me</button>
+                <ContactMe className='modal'>Modal Content</ContactMe>
+                <Link to="/resume"> 
+                Resume
+                </Link>
             </section>
         </section>
     )
