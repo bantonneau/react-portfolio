@@ -91,7 +91,7 @@ h3 {
   align-items: center;
 }
 
-.buttons a {
+.buttons a, button {
   background-color: var(--mainColor); 
   border: none;
   color: var(--backgroundGrey);
@@ -217,6 +217,13 @@ hr {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 1231px) {
+  .buttons {
+    margin-left: 30vw;
+    margin-top: 50px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .hero {
     flex-direction: column;
@@ -232,6 +239,13 @@ hr {
     margin: 0 4vw 20px;
     flex-shrink: 0;
   }
+  
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
 
 
  .row {
@@ -246,6 +260,14 @@ hr {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .title {
+    align-self: center;
   }
 }
 

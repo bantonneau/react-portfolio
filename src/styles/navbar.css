@@ -40,29 +40,5 @@
 
 
 
-.toggleButton svg {
-    font-size: 50px;
-}
 
-.toggleButton button {
-    margin-right: 20px;
-    background-color: transparent;
-    border: none;
-    color: var(--accentColor);
-    cursor: pointer;
-}
 
-#open {
-    height: 100vh;
-}
-
-#open .links {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 0px;
-}
-
-#open a {
-    width: 100%;
-    text-align: center;
-}
