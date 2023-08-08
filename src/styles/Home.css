@@ -55,7 +55,7 @@ h3 {
 
 
 .about {
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   color: var(--accentColor);
@@ -91,8 +91,9 @@ h3 {
   align-items: center;
 }
 
-.buttons a, button {
-  background-color: var(--mainColor); 
+.buttons a,
+button {
+  background-color: var(--mainColor);
   border: none;
   color: var(--backgroundGrey);
   padding: 15px 32px;
@@ -114,7 +115,7 @@ h3 {
 
 .navbar .socialMedia {
   color: white;
-  margin: 0px 20px 0px 20px;  
+  margin: 0px 20px 0px 20px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -219,15 +220,24 @@ hr {
 
 @media only screen and (max-width: 1231px) {
   .buttons {
-    margin-left: 30vw;
-    margin-top: 50px;
+    margin-left: 140px;
+    margin-top: 30px;
   }
 }
 
+
+
 @media only screen and (max-width: 600px) {
+  .navbarSocialMedia {
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+  }
+
   .hero {
     flex-direction: column;
     align-items: center;
+    display: flex
   }
 
   .image-cropper {
@@ -239,7 +249,7 @@ hr {
     margin: 0 4vw 20px;
     flex-shrink: 0;
   }
-  
+
   img {
     display: inline;
     margin: 0 auto;
@@ -248,9 +258,9 @@ hr {
   }
 
 
- .row {
-  flex-direction: column;
- }
+  .row {
+    flex-direction: column;
+  }
 
 
   .skills {
@@ -269,5 +279,13 @@ hr {
   .title {
     align-self: center;
   }
-}
 
+  .rowContent {
+    padding-left: 0px;
+  }
+
+  .buttons,
+  button {
+    margin-left: 0;
+  }
+}
